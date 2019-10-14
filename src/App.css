@@ -1,22 +1,135 @@
-.App {
+* {
+  box-sizing: border-box;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+body {
+  background-color: #efefef;
+}
+
+.loginBody {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.mainLogin{
+  width: 350px;
+  height: 390px;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 1px;
+  margin: 60px auto 0 auto;
+  padding: 10px 0;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logoImage {
+  width: 175px;
+  height: 51px;
+  margin: 22px auto 36px auto;
 }
 
-.App-link {
-  color: #09d3ac;
+.IDinput, .PWinput {
+  background-color: #fafafa;
+  display: block;
+  width: 268px;
+  height: 38px;
+  margin: 0px auto 6px auto;
+  padding: 9px 8px 7px 8px;
+  border-style: none;
+  border-radius: 4px;
+  border: 1px solid #efefef;
+}
+
+.loginBtn {
+  background-color: #fafafa;
+  display: block;
+  width: 268px;
+  height: 38px;
+  margin: 15px auto;
+  border-style: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: var(--h5f, #3897f0);
+  opacity: 0.3;
+  font-weight: bold;
+}
+
+
+.barBox {
+  margin-bottom: 20px;
+}
+
+.or {
+  display: inline;
+  margin: 0 18px;
+}
+
+.bar1, .bar2 {
+  display: inline-block;
+  border-bottom: 1px solid #e6e6e6;
+  width: 90px;
+  margin-bottom: 6px;
+}
+
+.facebookLogin a {
+  position: relative;
+}
+
+.facebookLoginBox {
+  margin-bottom: 20px;
+}
+
+.facebookLogo {
+  position: absolute;
+  bottom: 0;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.facebookLogintextLine1 {
+  padding-left: 25px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.secLoginContainerBox {
+  margin: 10px auto;
+  width: 350px;
+  height: 63px;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 1px;
+  padding: 10px 0;
+  vertical-align: middle;
+}
+
+.secLoginText {
+  vertical-align: middle;
+}
+
+.joinLink {
+  color: var(--h5f, #3897f0);
+}
+
+.appDwn {
+  margin: 30px auto;
+}
+
+div.appStore, div.googlePlay {
+  text-align: center;
+  display: inline-block;
+}
+.appStoreLogo {
+  margin: 0 3px;
+  width: 136px;
+  height: 40px;
+}
+
+.googlePlayLogo {
+  margin: 0 3px;
+  width: 134px;
+  height: 40px;
 }
