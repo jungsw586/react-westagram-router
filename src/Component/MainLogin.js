@@ -5,19 +5,17 @@ import FaceBookLoginArea from './FaceBookLoginArea';
 
 class MainLogin extends Component {
     
-    handlerOnChanged = () => {
-        let idInput = document.getElementsByClassName('IDinput')[0];
-        let pwInput = document.getElementsByClassName('PWinput')[0];
+    handlerOnChanged = (e) => {
         console.log('onchange worked!');
-        if(idInput.value.length !== 0 && pwInput.value.length !== 0){
-            document.getElementsByClassName("loginBtn")[0].style.opacity = "1";
+        if(e.target.form[0].value.length !== 0 && e.target.form[1].value.length !== 0){
+            e.target.form[2].style.opacity = "1"
         } else {
-            document.getElementsByClassName("loginBtn")[0].style.opacity = "0.3";
+            e.target.form[2].style.opacity = "0.3"
         }
     }
-    handlerOnClicked = () => {
-        let idInput = document.getElementsByClassName('IDinput')[0];
-        let pwInput = document.getElementsByClassName('PWinput')[0];
+    handlerOnClicked = (e) => {
+        let idInput = e.target.form[0];
+        let pwInput = e.target.form[1];
         if(idInput.value.length !== 0 && pwInput.value.length !== 0){
             alert('로그인 성공!')
         } else {
@@ -25,16 +23,17 @@ class MainLogin extends Component {
         }
     }
     render() {
+                    
         return(
-            <div className="mainLogin containerBox">
+            <form className="mainLogin containerBox" onChange={this.handlerOnChanged}>
                 <img className="logoImage" src={InstagramLogo} alt={'Instagrma Logo'}/>
-                <input className="IDinput" type={"text"} onChange={this.handlerOnChanged}/>
-                <input className="PWinput" type={"password"} onChange={this.handlerOnChanged}/>
-                <button className="loginBtn" onClick={this.handlerOnClicked}>로그인</button>
+                <input className="IDinput" name="IDinput" type={"text"} placeholder="전화번호, 사용자 이름 또는 이메일" />
+                <input className="PWinput" name="PWinput" type={"password"} placeholder="비밀번호" />
+                <button className="loginBtn" name="LoginBtn" onClick={this.handlerOnClicked}>로그인</button>
                 <BarArea />
                 <FaceBookLoginArea />
                 <div className="facebookLogintextLine2"><a href={"https://www.instagram.com/accounts/password/reset/"}>비밀번호를 잊으셨나요?</a></div>
-            </div>
+            </form>
         );
     }
 
