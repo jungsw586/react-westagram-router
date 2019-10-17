@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FaceBookLogo from '../img/facebookLogo.png'
+import FaceBookLogo from '../Component_login/img/facebookLogo.png'
 
 class FaceBookLoginArea extends Component {
     render() {

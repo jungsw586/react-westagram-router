@@ -1,0 +1,447 @@
+* {
+    box-sizing: border-box;
+}
+
+.Img-radius {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+body {
+    margin: 0;
+    background-color: #fafafa;
+}
+
+a {
+    font-weight: bold;
+}
+
+.nav {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #fff;
+    padding: 10px 0;
+    border: 1px solid #efefef;
+    height: 60px;
+}
+
+.nav-container {
+    background-color: #fff;
+    width: 1000px;
+    margin: 0 auto;
+    height: 40px;
+}
+
+.nav-logo-area, .nav-input-area, .nav-set-area {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+
+}
+
+.nav-logo-area {
+    float: left;
+    width: 180px;
+    height: 30px;
+    margin: 5px;
+}
+
+.nav-instagram-logo {
+    vertical-align: middle;
+    width: 26px;
+    height: 24px;
+}
+
+.nav-bar1 {
+    vertical-align: middle;
+    display: inline-block;
+    border-left: 2px solid black;
+    height: 28px;
+    margin-left: 10px;
+}
+
+.nav-text-logo {
+    margin-left: 10px;
+    vertical-align: middle;
+    width: 103px;
+    height: 29px;
+}
+
+.nav-input-area {
+    vertical-align: middle;
+    text-align: center;
+    width: auto;
+    height: 30px;
+    margin: 5px;
+
+}
+
+.nav-input-Box {
+    position: relative;
+    top: 2px;
+    width: 215px;
+    height: 25px;
+    border: 1px solid #dbdbdb;
+    background-color: #fafafa;
+    font-size: 14px;
+}
+
+.filteredBox {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    text-align: left;
+    display: none;
+}
+
+.filteredBox div {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.filteredBox div span {
+    color:#3897f0;
+}
+
+.nav-set-area {
+    float: right;
+    width: 180px;
+    height: 30px;
+    margin: 5px;}
+
+.nav-set-area img {
+    position: relative;
+    top: 2px;
+    vertical-align: middle;
+    margin: 0 10px;
+    width: 26px;
+    height: 24px;
+}
+
+.main {
+    clear: both;
+    text-align: center;
+}
+
+.main-container {
+    position: relative;
+    width: 1000px;
+    margin: 60px auto;
+    vertical-align: top;;
+}
+
+.feeds {
+    display: inline-block;
+    width: 614px;
+    text-align: left;
+}
+
+.article-header {
+    vertical-align: middle;
+    height: 60px;
+    border: 1px solid #efefef;
+    background-color: #fff;
+}
+
+.article-header span, .article-header button{
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+    margin: 15px;
+}
+
+.feedUserProfile {
+    display: inline-block;
+}
+
+.feedUserProfile a {
+    vertical-align: middle;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.feedUserProfile img {
+    vertical-align: middle;
+    height: 30px;
+    width: 30px;
+}
+
+.more-btn {
+    float: right;
+    width: 60px;
+    height: 30px;
+    border-style: none;
+}
+
+.article-feedcontent-box {
+    position: relative;
+    border: 1px solid #efefef;
+    background-color: #fff;
+    padding: 10px 0;
+    height: 200px;
+}
+
+.article-feedMainImage {
+    width: 100%;
+}
+
+.article-feed-Interactive-area {
+    text-align: left;
+}
+
+.article-feed-Interactive-area div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.article-feed-Interactive-area div img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 26px;
+    height: 24px;
+    margin: 0 5px;
+}
+
+.article-feed-Interactive-box-1 {
+    margin: 0 10px 6px 10px;
+}
+
+.article-feed-Interactive-box-2 {
+    float: right;
+    margin: 0 10px 6px 10px;
+}
+
+.article-feed-showLike-area{
+    clear: both;
+    text-align: left;
+    margin: 5px 13px 10px 13px;
+}
+
+.article-feed-showLike-area img{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.article-feed-article-area{
+    margin: 5px 13px 10px 13px;
+}
+
+.article-feed-showLike-area img, .article-feed-showLike-area span{
+    vertical-align: middle;
+}
+
+.article-feed-comment-area {
+    height: 85px;
+    margin: 0 13px;
+    overflow: scroll;
+}
+
+.comment-Like {
+    position: absolute;
+    top: 3px;
+    right: 0px;
+    width: 12px;
+    height: 11px;
+}
+
+.comment-content {
+    padding-left: 10px;
+}
+
+.comment-box {
+    vertical-align: middle;
+    position: relative;
+    border: none;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.article-feed-twit-area {
+    text-align: left;
+    border: 1px solid #efefef;
+    background-color: #fff;
+    position: relative;
+    vertical-align: middle;
+    padding: 10px 10px;
+}
+
+.article-feed-twit-area input {
+    position: relative;
+    left: 10px;
+    height: 30px;
+    width: 90%;
+    font-size: 16px;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.article-feed-twit-area button {
+    margin-left: 10px;
+    position: relative;
+    height: 30px;
+    width: auto;
+    vertical-align: middle;
+    border-style: none;
+    color: #3897f0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+.main-right-container {
+    margin-left: 15px;
+    vertical-align: top;
+    width: 320px;
+    display: inline-block;
+}
+
+.main-right-myprofile {
+    width: 314px;
+    text-align: left;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+.main-right-myprofile img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.main-right-myprofile-describtion {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-right-myprofile-describtion span {
+    padding: 0 9px 0px 6px;
+    color: #999;
+}
+
+
+.main-right-story {
+    width: 314px;
+    height: 223px;
+    text-align: left;
+    margin-top: 20px;
+    border: 1px solid #efefef;
+    background-color: #fff;
+    padding: 10px;
+    position: relative;
+}
+
+.main-right-story-content-area {
+    height: 160px;
+    overflow: scroll;
+}
+
+.main-right-story-header {
+    position: relative;
+    padding: 10px 10px;
+}
+
+.main-right-story-showAll {
+    position: absolute;
+    right: 5px;
+    border: none;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.main-right-story-header div {
+    display: inline-block;
+    vertical-align: middle;
+    color: #999;
+}
+
+.main-right-story-content {
+    padding: 0px 0 10px 20px;
+}
+
+.story-time {
+    color: #999;
+}
+
+.main-right-story-content img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.main-right-story-content > div {
+    display: inline-block;
+}
+
+.main-right-recommand {
+    width: 314px;
+    height: 197px;
+    text-align: left;
+    margin-top: 20px;
+    border: 1px solid #efefef;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.main-right-recommand-content-area {
+    overflow: scroll;
+    height: 130px;
+}
+
+.main-right-recommand-header {
+    position: relative;
+    padding: 10px 10px;
+}
+
+.main-right-recommand-showAll {
+    position: absolute;
+    right: 5px;
+    border: none;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.main-right-recommand-header div{
+    display: inline-block;
+    vertical-align: middle;
+    color: #999;
+}
+
+.main-right-recommand-content {
+    padding: 0px 0 10px 20px;
+
+}
+
+.main-right-recommand-content img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.main-right-recommand-content > div {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-right-recommand-content button {
+    vertical-align: middle;
+    border-style: none;
+    font-size: 16px;
+    color: #3897f0;
+    font-weight: bold;
+}
