@@ -3,30 +3,8 @@ import ArticleHeader from './ArticleBody/Article-Header';
 import ArticleMainImage from './ArticleBody/Article-MainImage';
 import ArticleContent from './ArticleBody/Article-Content';
 import ArticleTwit from './ArticleBody/Article-Twit';
+import { articleUserData, articleCommnetData } from './ArticleData'
 
-const articleUserData = [
-    {
-        username: 'jungsw586',
-        articleContent: 'React is Goooooooooood!!!!!!!!!',
-    },
-];
-const articleCommnetData = [
-    {
-        username: 'jsi7037',
-        articleContent: 'yes',
-        id: 1,
-    },
-    {
-        username: 'leemutnam2288',
-        articleContent: 'ㅇㅇ',
-        id: 2,
-    },
-    {
-        username: 'jhj3434',
-        articleContent: 'me too',
-        id: 3,
-    },
-];
 
 class Article extends Component {
     constructor(props){

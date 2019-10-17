@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import InstagramLogo from '../Component_login/img/logo_text.png';
 import BarArea from './BarArea';
 import FaceBookLoginArea from './FaceBookLoginArea';
@@ -30,7 +31,12 @@ class MainLogin extends Component {
     }
 
     handlerOnClicked = (e) => {
-        this.state.IDinput.length !== 0 && this.state.PWinput.length !== 0 ? alert('로그인 성공!') : alert('아이디 혹은 비밀번호를 입력해주세요!')
+        this.state.IDinput.length !== 0 && this.state.PWinput.length !== 0
+        ?
+        //alert('로그인 성공!')
+        this.props.history.push('/Main')
+        :
+        alert('아이디 혹은 비밀번호를 입력해주세요!')
     }
 
     render() {
@@ -71,4 +77,4 @@ class MainLogin extends Component {
 
 }
 
-export default MainLogin
+export default withRouter(MainLogin)

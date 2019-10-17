@@ -1,15 +1,6 @@
 import React, {Component} from 'react';
 import NavInputFiltered from './NavInputFilter/NavInputFiltered'
-
-const recommandUserName = [
-    'jungsw586',
-    'jungsw',
-    'jsi7037',
-    'jsw3434',
-    'wecode',
-    'wework',
-    'looper',
-];
+import recommandUserName from './NavRecommandData'
 
 class NavInputArea extends Component {
     constructor(props){
@@ -29,13 +20,12 @@ class NavInputArea extends Component {
             this.setState({
                 filterDisplay: this.state.searchkeywords.length > 0 ? 'block' : 'none',
             },this.userNameFilter(this.state.searchkeywords))
-            
         })
     }
 
     userNameFilter = (keword) => {
         let arr = []
-        this.state.recommandUserNameList.map((el) => {
+        this.state.recommandUserNameList.forEach((el) => {
             if(el.startsWith(keword)){
                 arr.push(el)
             }
