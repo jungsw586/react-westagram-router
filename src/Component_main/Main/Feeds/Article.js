@@ -70,8 +70,6 @@ class Article extends Component {
             comment,
             colorOpacity,
         } = this.state;
-        console.log(comment)
-        console.log(commentData)
 
         return (
             <article className="article-1">
